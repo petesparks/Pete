@@ -1,0 +1,24 @@
+.home-banner {
+  height: 135vh;
+  margin-top: -72px;
+  background-image: url("https://res.cloudinary.com/lwsw18ldn/image/upload/q_auto:low/v1548439252/personal/OQ3OW90.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+.position-left-center {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .position-left-center {
+    position: absolute;
+    top: 22%;
+    left: 5%;
+  }
+  .small-screen {
+    top: 16%;
+  }
+}

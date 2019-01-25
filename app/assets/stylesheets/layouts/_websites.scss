@@ -1,0 +1,39 @@
+.banner-white-black {
+  height: 80vh;
+  background-image: linear-gradient(to bottom, #f6f6f6, #c1c0c1, #8f8d8d, #5f5d5c, #323230);
+}
+
+.website-banner {
+  height: 135vh;
+  margin-top: -72px;
+  background-image: url("https://res.cloudinary.com/lwsw18ldn/image/upload/q_auto:low/v1548446146/personal/142986-OT8EC1-303.jpg");
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  color: #f4f4f4;
+}
+
+.position-right-center {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 40vw;
+}
+.small-screen-web {
+  top: 45%;
+}
+
+@media only screen and (max-width: 600px) {
+    .position-right-center {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 90vw;
+  }
+  .small-screen-web {
+    top: 6%;
+  }
+  .website-banner {
+    background-position: unset;
+  }
+}
