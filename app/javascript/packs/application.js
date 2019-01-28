@@ -1,7 +1,7 @@
 import "bootstrap";
 
-import { scrollFunction } from '../components/scroll';
-scrollFunction();
+// import { scrollFunction } from '../components/scroll';
+// scrollFunction();
 
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 initUpdateNavbarOnScroll();
