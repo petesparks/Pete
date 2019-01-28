@@ -1,9 +1,9 @@
 /* Main navbar */
-.navbar-home {
+.navbar {
   // box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: transparent;
+  background: #f7f7f7;
   transition: all 0.3s ease;
-  height: 70px;
+  height: 40px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
@@ -11,9 +11,28 @@
   position: sticky !important;
   top: 0 !important;
   z-index: 1;
+  transition: 0.75s;
+  .navbar-link {
+    // color: #00BFD8;
+  }
   h4 {
     flex: 5%;
   }
+}
+
+/* transparent navbar on home page*/
+.navbar-home {
+  background-color: transparent;
+  box-shadow: none;
+  position: sticky !important;
+
+  .navbar-link {
+    color: black;
+  }
+}
+
+.navbar-portfolio {
+  background-color: #C7D1DE;
 }
 
 /* Logo */

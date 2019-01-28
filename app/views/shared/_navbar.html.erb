@@ -1,47 +1,15 @@
-<div class="navbar-home">
+<nav class="navbar #navbar <%= 'navbar-home' if params[:action] == 'home'%><%= 'navbar-portfolio' if params[:action] == 'portfolio'%>">
   <!-- Logo -->
-  <%#= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%#= image_tag "logo.png", height: 50 %>
-  <%# end %>
   <h4>SparkByte</h4>
 
   <!-- Right Navigation -->
   <div class="navbar-center hidden-xs hidden-sm">
 
-    <%# if user_signed_in? %>
-
       <!-- Links when logged in -->
-      <%= link_to "Websites", "#", class: "navbar-item navbar-link" %>
-      <%= link_to "Apps", "#", class: "navbar-item navbar-link" %>
-      <%= link_to "Contact", "#", class: "navbar-item navbar-link" %>
-
-      <!-- Avatar with dropdown menu -->
-      <!-- <div class="navbar-wagon-item">
-        <div class="dropdown"> -->
-          <%#= image_tag "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
-          <!-- <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li> -->
-              <%#= link_to "#websites" do %>
-                <!-- <i class="fa fa-user"></i> Who --> <%#= t(".profile", default: "Profile") %>
-              <%# end %>
-            <!-- </li>
-            <li> -->
-              <%#= link_to "#apps" do %>
-                <!-- <i class="fa fa-cog"></i> How -->  <%#= t(".settings", default: "Settings") %>
-              <%# end %>
-            <!-- </li>
-            <li> -->
-              <%#= link_to destroy_user_session_path, method: :delete do %>
-                <!-- <i class="fa fa-sign-out"></i> -->  <%#= t(".sign_out", default: "Log out") %>
-              <%# end %>
-            <!-- </li>
-          </ul>
-        </div>
-      </div> -->
-    <%# else %>
-      <!-- Login link (when logged out) -->
-      <%#= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <%# end %>
+      <%= link_to "Websites", root_path("#website"), class: "navbar-item navbar-link", onclick: "scrollFunction()" %>
+      <%= link_to "Apps", root_path, class: "navbar-item navbar-link" %>
+      <%= link_to "Portfolio", portfolio_path, class: "navbar-item navbar-link" %>
+      <%= link_to "Contact", root_path(".contact"), class: "navbar-item navbar-link", onclick: "scrollFunction()" %>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
@@ -49,11 +17,14 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
-        <li><a href="#">Websites</a></li>
-        <li><a href="#">Apps</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a onclick="scrollFunction()" href="/">Websites</a></li>
+        <li><a href="/">Apps</a></li>
+        <li><%= link_to "Portfolio", portfolio_path %></li>
+        <li><a href="/">Contact</a></li>
       </ul>
     </div>
   </div>
-</div>
+</nav>
+
+
 
