@@ -1,4 +1,5 @@
 import "bootstrap";
+import '../components/scroll';
 
 // import { scrollFunction } from '../components/scroll';
 // scrollFunction();
