@@ -4,7 +4,7 @@
   background: #f7f7f7;
   transition: all 0.3s ease;
   height: 40px;
-  padding: 0px 30px;
+  padding: 0px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,6 +33,11 @@
 
 .navbar-portfolio {
   background-color: #C7D1DE;
+}
+
+.navbar:before, .navbar:after {
+    display: table;
+    content: none;
 }
 
 /* Logo */
