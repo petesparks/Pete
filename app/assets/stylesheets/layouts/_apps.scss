@@ -21,15 +21,27 @@
   top: 65%;
 }
 
-@media only screen and (max-width: 600px) {
-    .position-app-left-center {
+@media (max-width: 1200px) {
+  .position-app-left-center {
     position: absolute;
-    top: 30%;
+    top: 7%;
+    left: 5%;
+    width: 69vw;
+  }
+  .small-screen-app {
+    top: 20%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .position-app-left-center {
+    position: absolute;
+    top: 7%;
     left: 5%;
     width: 90vw;
   }
   .small-screen-app {
-    top: 10%;
+    top: 72%;
   }
   .app-banner {
     background-position: center;
